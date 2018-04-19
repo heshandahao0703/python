@@ -13,3 +13,12 @@ class Solution:
                 
         else:
             return False
+
+
+     
+    def isPowerOfThree2(self, n):
+    	if n>0:
+    		lognum = math.log(n, 3)
+    		log_part=math.floor(lognum)
+    		return (lognum - log_part == 0)
+
